@@ -24,7 +24,7 @@ jobs:
       - run: docker push kc114414/multi-worker-10-14
  
       - name: Generate deployment package
-      - run: zip -r deploy.zip . -x '*.git*'
+        run: zip -r deploy.zip . -x '*.git*'
  
       - name: Deploy to EB
         uses: einaregilsson/beanstalk-deploy@v18
